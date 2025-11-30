@@ -1,0 +1,24 @@
+{
+  // 每次存檔自動格式化
+  "editor.formatOnSave": true,
+
+  // 告訴 VS Code，格式化時要用 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 讓 Prettier 支援 Tailwind class 排序
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // ESLint 設定
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.format.enable": true,
+
+  // 不要每次 Prettier 跟 ESLint 打架
+  "prettier.requireConfig": true,
+
+  // 讓你貼程式碼更舒服（可選但超好用）
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}
